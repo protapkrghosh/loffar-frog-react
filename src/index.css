@@ -1,25 +1,10 @@
-@import url('https://fonts.cdnfonts.com/css/gagalin');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: 'gagalin';
-}
+body {}
 
-/* NavBar */
-.textStroke {
-  -webkit-text-stroke-width: 1;
-  -webkit-text-stroke-color: #e63434;
-}
 
-.navButton {
-  border-radius: 5px;
-  border: 2px solid #FFF;
-  background: #DF355F;
-  box-shadow: 4px 4px 0px 0px #FFF;
-}
 
 @layer base {
   :root {
