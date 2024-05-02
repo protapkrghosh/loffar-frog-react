@@ -7,7 +7,13 @@
 
 body {
   background: #0F0906;
+}
+
+.font1 {
   font-family: 'Panton Rust Heavy', sans-serif;
+}
+
+.font2 {
   font-family: "Passero One", sans-serif;
 }
 
