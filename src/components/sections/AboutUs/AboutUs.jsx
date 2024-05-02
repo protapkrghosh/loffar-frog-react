@@ -6,9 +6,10 @@ const AboutUs = () => {
   return (
     <div className='xl:mt-[185px]'>
       <Container>
-        <div>
 
-          <div>
+        <div className='flex lg:space-x-4'>
+
+          <div className='lg:w-[60%]'>
             <p className='text-[#FBA32C] text-[105px] font1 leading-[126px] tracking-[2.1px] lg:mb-[24px]'>about Us frog</p>
             <p className='text-[#B2ACA8] text-[24px] font2 leading-[40.8px] tracking-[0.48px] lg:mb-[16px]'>Welcome to Loffar Frog, where imagination meets innovation. As the whimsical minds behind the scenes, we're dedicated to crafting delightful experiences that enchant and inspire. </p>
 
@@ -20,7 +21,7 @@ const AboutUs = () => {
             </div>
           </div>
 
-          <div>
+          <div className='lg:w-[40%]'>
             <img src={aboutImg} alt="image" />
           </div>
         </div>
