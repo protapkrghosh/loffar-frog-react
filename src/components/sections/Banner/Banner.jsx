@@ -81,16 +81,16 @@ const Banner = () => {
   return (
     <div>
       <div>
-        <img src={bannerBg} alt="Image" className="h-[1000px] 2xl:h-auto w-full xl:-mt-[125px] xl:-mb-[800px] 2xl:-mb-[1090px]" />
+        <img src={bannerBg} alt="Image" className="h-[1000px] 2xl:h-auto w-full xl:-mt-[125px] xl:-mb-[800px] 2xl:-mb-[1050px]" />
 
-        <div className="mb-[275px]">
+        <div className="mb-[235px]">
           <Container>
             <div className="md:flex justify-between items-center gap-x-[91px]">
               <div className="md:w-[40%] xl:w-[45%] 2xl:w-[40%]">
                 <div className="relative">
-                  <img src={frogCard} alt="Image" className="2xl:scale-110"/>
+                  <img src={frogCard} alt="Image" className="2xl:h-[820px] 2xl:scale-110"/>
 
-                  <div className="absolute bottom-[15px] 2xl:bottom-[8px] left-[64px] 2xl:left-[95px]">
+                  <div className="absolute bottom-[15px] 2xl:bottom-[25px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
