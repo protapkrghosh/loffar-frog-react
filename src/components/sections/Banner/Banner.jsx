@@ -64,20 +64,20 @@ const Banner = () => {
       <div>
         <img src={bannerBg} alt="Image" className="h-[1000px] 2xl:h-auto w-full xl:-mt-[125px] xl:-mb-[800px] 2xl:-mb-[1090px]" />
 
-        <div className="mb-[275px] 2xl:mb-[">
+        <div className="mb-[275px]">
           <Container>
             <div className="md:flex justify-between items-center gap-x-[91px]">
               <div className="md:w-[40%] xl:w-[45%] 2xl:w-[40%]">
                 <div className="relative">
                   <img src={frogCard} alt="Image" />
 
-                  <div className="absolute bottom-[355px] 2xl:bottom-[380px] left-[64px] 2xl:left-[90px]">
+                  <div className="absolute bottom-[355px] 2xl:bottom-[305px] left-[64px] 2xl:left-[90px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
                     {/* Timers */}
                     <div className="relative">
-                      <div className="h-[62px] w-[240px] bg-[#FBA32C] rounded-[8px]" />
+                      <div className="h-[62px] w-[260px] bg-[#FBA32C] rounded-[8px]" />
                       {timerComponents.length ?
                         (
                           <div className="absolute -top-1">
@@ -100,6 +100,10 @@ const Banner = () => {
                           </div>
                         ) : <span className="text-[#1E1510] font-pantonRust absolute top-5 left-[72px]">Time's up!</span>
                       }
+                    </div>
+
+                    <div>
+                      <p className="text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px]"><span>over 2 Million</span>Contribution Received and Growing</p>
                     </div>
                   </div>
                 </div>
