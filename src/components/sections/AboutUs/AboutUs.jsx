@@ -22,7 +22,7 @@ const AboutUs = () => {
           </div>
 
           <div className='lg:w-[40%]'>
-            <img src={aboutImg} alt="image" />
+            <img className='lg:ml-[50px]' src={aboutImg} alt="image" />
           </div>
         </div>
       </Container>
