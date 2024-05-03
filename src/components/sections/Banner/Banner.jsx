@@ -90,13 +90,13 @@ const Banner = () => {
                 <div className="relative">
                   <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[15px] 2xl:bottom-[0px] left-[64px] 2xl:left-[95px]">
+                  <div className="absolute bottom-[15px] 2xl:bottom-[8px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
                     {/* Timers */}
                     <div className="relative">
-                      <div className="h-[62px] xl:w-[240px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] 2xl:-ml-[18px]" />
+                      <div className="h-[58px] xl:w-[240px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] 2xl:-ml-[18px]" />
                       {timerComponents.length ?
                         (
                           <div className="absolute -top-1">
