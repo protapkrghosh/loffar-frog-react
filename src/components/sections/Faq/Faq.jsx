@@ -4,7 +4,7 @@ import faqImg from '@/assets/images/Group 1171275338.png';
 
 const Faq = () => {
   return (
-    <div className='lg:mt-[200px]'>
+    <div className='lg:mt-[400px]'>
       <Container>
 
         <div className='flex lg:space-x-[150px]'>

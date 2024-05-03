@@ -68,6 +68,27 @@ const Roadmap = () => {
 
             </div>
 
+            {/* ------------- card 3 -------------- */}
+            <div className='xl:ml-[1245px] lg:mt-[-457px]'>
+              <p className='text-[#FBA32C] font1 text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 3</p>
+
+              <div className='flex items-center md:gap-4 lg:mb-[22px]'>
+                <img className='lg:w-auto' src={roadmapCardLogo} alt="image" />
+                <p className='text-[#B2ACA8] font2 md:text-[18px] lg:leading-[21.6px] tracking-[1.44px]'>KOL Marketing</p>
+              </div>
+
+              <div className='flex items-center md:gap-4 lg:mb-[22px]'>
+                <img className='lg:w-auto' src={roadmapCardLogo} alt="image" />
+                <p className='text-[#B2ACA8] font2 md:text-[18px] lg:leading-[21.6px] tracking-[1.44px]'>Meme Contast</p>
+              </div>
+
+              <div className='flex items-center md:gap-4'>
+                <img className='lg:w-auto' src={roadmapCardLogo} alt="image" />
+                <p className='text-[#B2ACA8] font2 md:text-[18px] lg:leading-[21.6px] tracking-[1.44px]'>First CEX Listing</p>
+              </div>
+
+            </div>
+
           </div>
 
         </div>
