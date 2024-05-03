@@ -1,8 +1,64 @@
 import bannerBg from "@/assets/images/Rectangle.png"
 import frogCard from "@/assets/images/Group.png"
 import Container from "../Container/Container";
+import { useEffect, useState } from "react";
 
 const Banner = () => {
+  const [presalePercentage, setPresalePercentage] = useState(2);
+
+  // Dynamic timer
+  const calculateTimeLeft = () => {
+    const difference = +new Date("2024-05-16") - +new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((difference / 1000 / 60) % 60),
+        seconds: Math.floor((difference / 1000) % 60),
+
+      };
+    }
+
+    // Pad numbers with leading zeros
+    Object.keys(timeLeft).forEach(interval => {
+      timeLeft[interval] = timeLeft[interval].toString().padStart(2, '0');
+    });
+
+    return timeLeft;
+  };
+
+  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setTimeLeft(calculateTimeLeft());
+    }, 1000);
+
+    setPresalePercentage(99 - timeLeft.hours * 1.2);
+    return () => clearTimeout(timer);
+  });
+
+  const timerComponents = [];
+
+  Object.keys(timeLeft).forEach((interval) => {
+    if (!timeLeft[interval]) {
+      return;
+    }
+    timerComponents.push(
+      <span key={interval} className="relative">
+        <span className="text-[#1E1510] text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] py-3">
+          {timeLeft[interval]}
+        </span>{" "}
+
+        {/* <span className="text-white text-[13px] md:text-[16px] uppercase absolute top-10 left-[16px] md:left-[22px] mt-[10px] md:mt-[15px]">
+          {interval.slice(0, interval.length - 1)}
+        </span>{" "} */}
+      </span>
+    );
+  });
+
   return (
     <div>
       <div>
@@ -15,10 +71,37 @@ const Banner = () => {
                 <div className="relative">
                   <img src={frogCard} alt="Image" />
 
-                  {/* <div className="absolute bottom-96 left-24">
-                    <p className="text-[#1E1510] text-[15px] font-passeroOne font-medium leading-[19px] proportional-nums">Presale Ends in:</p>
-                    <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px]">Token Will Be On Raydium My 1fst 2024</p>
-                  </div> */}
+                  <div className="absolute bottom-[355px] 2xl:bottom-[380px] left-[64px] 2xl:left-[90px]">
+                    <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
+                    <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
+
+                    {/* Timers */}
+                    <div className="relative">
+                      <div className="h-[62px] w-[240px] bg-[#FBA32C] rounded-[8px]" />
+                      {timerComponents.length ?
+                        (
+                          <div className="absolute -top-1">
+                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px]'>
+                              {timerComponents.length ? timerComponents : <span>Time's up!</span>}
+                            </div>
+
+                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 absolute top-[16px] left-[55px]">
+                              <span>:</span>
+                              <span>:</span>
+                              <span>:</span>
+                            </div>
+
+                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] absolute top-[43px] left-[25px]">
+                              <span>Day</span>
+                              <span>Hrs</span>
+                              <span>Mins</span>
+                              <span>Sec</span>
+                            </div>
+                          </div>
+                        ) : <span className="text-[#1E1510] font-pantonRust absolute top-5 left-[72px]">Time's up!</span>
+                      }
+                    </div>
+                  </div>
                 </div>
               </div>
 
