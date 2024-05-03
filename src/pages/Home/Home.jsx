@@ -10,10 +10,10 @@ const Home = () => {
   return (
     <div>
       <AboutUs />
-      <Tokenomics/>
-      {/* <Roadmap />
-      <Faq /> */}
-      <FooterLinkSection />
+      {/* <Tokenomics />
+      <Roadmap />
+      <Faq />
+      <FooterLinkSection /> */}
     </div>
   );
 };
