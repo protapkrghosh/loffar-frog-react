@@ -81,7 +81,7 @@ const Banner = () => {
   return (
     <div>
       <div>
-        <img src={bannerBg} alt="Image" className="h-[1000px] 2xl:h-auto w-full xl:-mt-[125px] xl:-mb-[800px] 2xl:-mb-[1050px]" />
+        <img src={bannerBg} alt="Image" className=" xl:h-[1150px] 2xl:h-auto w-full xl:-mt-[125px] xl:-mb-[928px] 2xl:-mb-[1050px]" />
 
         <div className="mb-[235px]">
           <Container>
