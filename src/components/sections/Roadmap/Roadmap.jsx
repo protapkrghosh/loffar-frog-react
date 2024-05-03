@@ -9,9 +9,9 @@ const Roadmap = () => {
       <Container>
         {/* ---------------- roadmap text ---------------- */}
         <div>
-          <p className='text-[#FBA32C] font-pantonRust font-medium text-[115px] leading-[138px] tracking-[2.3px] lg:mb-[8px]'>ROADMAP</p>
+          <p className='text-[#FBA32C] font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px]'>ROADMAP</p>
 
-          <p className='text-[#B2ACA8] font-passeroOne text-[20px] leading-[34px] tracking-[0.4px] lg:w-[42%]'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
+          <p className='text-[#B2ACA8] font-passeroOne lg:text-[20px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%]'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
         </div>
 
         {/* ----------- roadmap section ------------ */}
@@ -19,15 +19,15 @@ const Roadmap = () => {
         <div>
 
           {/* images  */}
-          <div className='lg:mt-[-245px]'>
-            <img className='lg:w-[93%] mx-auto' src={roadmapImg} alt="image" />
+          <div className='xl:mt-[-245px] lg:mt-[-140px]'>
+            <img className='2xl:w-[93%] xl:w-[92%] lg:w-[92%] mx-auto' src={roadmapImg} alt="image" />
           </div>
 
           {/* text  */}
           <div>
 
             {/* ------------- card 1 -------------- */}
-            <div className='xl:ml-[155px] lg:mt-[24px]'>
+            <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
               <p className='text-[#FBA32C] font-pantonRust font-medium text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 1</p>
 
               <div className='flex items-center md:gap-4 lg:mb-[22px]'>
@@ -48,7 +48,7 @@ const Roadmap = () => {
             </div>
 
             {/* ------------- card 2 -------------- */}
-            <div className='xl:ml-[715px] lg:mt-[-337px]'>
+            <div className='2xl:ml-[715px] xl:ml-[586px] lg:ml-[455px] 2xl:mt-[-337px] xl:mt-[-305px] lg:mt-[-270px]'>
               <p className='text-[#FBA32C] font-pantonRust font-medium text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 2</p>
 
               <div className='flex items-center md:gap-4 lg:mb-[22px]'>
@@ -69,7 +69,7 @@ const Roadmap = () => {
             </div>
 
             {/* ------------- card 3 -------------- */}
-            <div className='xl:ml-[1245px] lg:mt-[-457px]'>
+            <div className='2xl:ml-[1245px] xl:ml-[995px] lg:ml-[760px] 2xl:mt-[-457px] xl:mt-[-397px] lg:mt-[-345px]'>
               <p className='text-[#FBA32C] font-pantonRust font-medium text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 3</p>
 
               <div className='flex items-center md:gap-4 lg:mb-[22px]'>
