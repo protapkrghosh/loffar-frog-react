@@ -26,7 +26,6 @@ const FooterLinkSection = () => {
               <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTelegramPlane className='w-[27px] h-[27px]' /></a>
 
               <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><PiGithubLogoFill className='w-[27px] h-[27px]' /></a>
-
             </div>
 
             <div className='space-x-6'>
