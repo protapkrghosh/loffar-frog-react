@@ -71,7 +71,7 @@ const Banner = () => {
                 <div className="relative">
                   <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[268px] 2xl:bottom-[306px] left-[64px] 2xl:left-[95px]">
+                  <div className="absolute bottom-[268px] 2xl:bottom-[247px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
@@ -103,7 +103,9 @@ const Banner = () => {
                     </div>
 
                     <div>
-                      <p className="text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px]"><span>over 2 Million</span>Contribution Received and Growing</p>
+                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-9"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
+
+                      <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px]">Send Sol To This Wallet</p>
                     </div>
                   </div>
                 </div>
