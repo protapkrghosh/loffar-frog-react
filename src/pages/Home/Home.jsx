@@ -13,8 +13,8 @@ const Home = () => {
       {/* <Banner /> */}
       <AboutUs />
       <Tokenomics />
-      {/* <Roadmap /> */}
-      {/* <Faq /> */}
+      <Roadmap />
+      <Faq />
       {/* <FooterLinkSection /> */}
     </div>
   );
