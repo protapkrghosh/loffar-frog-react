@@ -1,5 +1,5 @@
 import Container from '@/components/sections/Container/Container';
-import React from 'react';
+
 
 const Footer = () => {
   return (
