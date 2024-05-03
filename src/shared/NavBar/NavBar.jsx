@@ -114,14 +114,14 @@ const NavBar = () => {
 
               <div className="block md:hidden">
                 <Link to="home" smooth={true} offset={-30} duration={600}>
-                  <Button className="bg-[#DF355F] uppercase text-[16px] font-inter font-normal">Join catwifhat</Button>
+                  <Button className="bg-[#DF355F] uppercase text-[16px] font-inter font-normal">Join loffar frog</Button>
                 </Link>
               </div>
             </ul>
 
             <div className="md:block hidden">
               <Link to="home" smooth={true} offset={-30} duration={600}>
-                <Button className="bg-[#DF355F] uppercase text-[16px] font-inter font-normal navButton">Join catwifhat</Button>
+                <Button className="bg-[#DF355F] uppercase text-[16px] font-inter font-normal navButton">Join loffar frog</Button>
               </Link>
             </div>
           </div>

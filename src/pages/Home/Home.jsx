@@ -9,8 +9,8 @@ const Home = () => {
   return (
     <div>
       <AboutUs />
-      <Roadmap />
-      <Faq />
+      {/* <Roadmap /> */}
+      {/* <Faq /> */}
       <FooterLinkSection />
     </div>
   );
