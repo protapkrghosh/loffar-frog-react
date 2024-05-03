@@ -2,8 +2,12 @@ import bannerBg from "@/assets/images/Rectangle.png"
 import frogCard from "@/assets/images/Group.png"
 import Container from "../Container/Container";
 import { useEffect, useState } from "react";
+import { FiCopy } from "react-icons/fi";
+import { MdLibraryAddCheck } from "react-icons/md";
+import toast from 'react-hot-toast';
 
 const Banner = () => {
+  const [copied, setCopied] = useState(false);
   const [presalePercentage, setPresalePercentage] = useState(2);
 
   // Dynamic timer
@@ -48,7 +52,7 @@ const Banner = () => {
     }
     timerComponents.push(
       <span key={interval} className="relative">
-        <span className="text-[#1E1510] text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] py-3">
+        <span className="text-[#1E1510] text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] 2xl:mx-[26px] py-3">
           {timeLeft[interval]}
         </span>{" "}
 
@@ -58,6 +62,21 @@ const Banner = () => {
       </span>
     );
   });
+
+
+  // Copy the contact ID =============
+  const copyLink = () => {
+    if (!copied) {
+      navigator.clipboard.writeText('0xaa86d4542969389b57936be83e5c888de001a95e').then(() => {
+        toast.success('Token copied');
+        setCopied(true);
+
+        setTimeout(() => {
+          setCopied(false);
+        }, 2000);
+      });
+    }
+  };
 
   return (
     <div>
@@ -69,29 +88,29 @@ const Banner = () => {
             <div className="md:flex justify-between items-center gap-x-[91px]">
               <div className="md:w-[40%] xl:w-[45%] 2xl:w-[40%]">
                 <div className="relative">
-                  <img src={frogCard} alt="Image" />
+                  <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[355px] 2xl:bottom-[305px] left-[64px] 2xl:left-[90px]">
+                  <div className="absolute bottom-[268px] 2xl:bottom-[247px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
                     {/* Timers */}
                     <div className="relative">
-                      <div className="h-[62px] w-[260px] bg-[#FBA32C] rounded-[8px]" />
+                      <div className="h-[62px] xl:w-[240px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] 2xl:-ml-[18px]" />
                       {timerComponents.length ?
                         (
                           <div className="absolute -top-1">
-                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px]'>
+                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px] 2xl:-left-7'>
                               {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                             </div>
 
-                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 absolute top-[16px] left-[55px]">
+                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 2xl:space-x-[68px] absolute top-[16px] left-[55px] 2xl:left-[40px]">
                               <span>:</span>
                               <span>:</span>
                               <span>:</span>
                             </div>
 
-                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] absolute top-[43px] left-[25px]">
+                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] 2xl:space-x-[56px] absolute top-[43px] left-[25px] 2xl:left-[4px]">
                               <span>Day</span>
                               <span>Hrs</span>
                               <span>Mins</span>
@@ -103,7 +122,22 @@ const Banner = () => {
                     </div>
 
                     <div>
-                      <p className="text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px]"><span>over 2 Million</span>Contribution Received and Growing</p>
+                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-9"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
+
+                      <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px]">Send Sol To This Wallet</p>
+
+                      {/* Copied text */}
+                      {/* <div className='flex justify-center md:justify-start'>
+                        <div className="flex justify-center items-center text-[14px] bg-[#FBA32C] py-2 rounded-[6px] w-fit px-3">
+                          <p className="text-[#1E1510] font-passeroOne mr-2 md:mr-5">0xaa86d4542969389b57936be83e5c888de001a95e</p>
+                          <button onClick={() => { setCopied(!copied); copyLink() }}>
+                            {
+                              copied ? <MdLibraryAddCheck className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" /> :
+                                <FiCopy className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" />
+                            }
+                          </button>
+                        </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
