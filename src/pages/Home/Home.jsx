@@ -10,12 +10,12 @@ import React from 'react';
 const Home = () => {
   return (
     <div>
-      {/* <Banner /> */}
+      <Banner />
       <AboutUs />
       <Tokenomics />
       <Roadmap />
       <Faq />
-      {/* <FooterLinkSection /> */}
+      <FooterLinkSection />
     </div>
   );
 };
