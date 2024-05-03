@@ -12,7 +12,14 @@ const Banner = () => {
           <Container>
             <div className="md:flex justify-between items-center gap-x-[91px]">
               <div className="md:w-[40%]">
-                <img src={frogCard} alt="Image" />
+                <div className="relative">
+                  <img src={frogCard} alt="Image" />
+
+                  <div className="absolute">
+                    <p className="text-[#1E1510] text-[15px] font-medium">Presale Ends in:</p>
+                    <p className="text-white">Token Will Be On Raydium My 1fst 2024</p>
+                  </div>
+                </div>
               </div>
 
               {/* Banner Content */}
