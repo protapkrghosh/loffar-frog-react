@@ -7,7 +7,7 @@ const Faq = () => {
     <div className='lg:mt-[400px]'>
       <Container>
 
-        <div className='flex lg:space-x-[150px]'>
+        <div className='flex 2xl:space-x-[150px] xl:space-x-[90px]'>
 
           {/* left side */}
           <div className='lg:w-[55%]'>
@@ -46,7 +46,7 @@ const Faq = () => {
 
             <p className='text-[#B2ACA8] font-passeroOne text-[20px] lg:leading-[34px] lg:tracking-[0.4px] lg:mb-[50px] xl:w-[90%]'>Explore our FAQ section for quick answers to common queries about Loffar Frog, your gateway to creativity and innovation.</p>
 
-            <div className='lg:w-[700px]'>
+            <div className='2xl:w-[700px] xl:w-[500px]'>
               <img className='xl:ml-[-60px]' src={faqImg} alt="image" />
             </div>
 
