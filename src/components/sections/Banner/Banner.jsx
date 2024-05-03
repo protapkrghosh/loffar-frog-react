@@ -68,7 +68,7 @@ const Banner = () => {
   const copyLink = () => {
     if (!copied) {
       navigator.clipboard.writeText('0xaa86d4542969389b57936be83e5c888de001a95e').then(() => {
-        toast.success('Token copied');
+        toast.success('Copied!');
         setCopied(true);
 
         setTimeout(() => {
