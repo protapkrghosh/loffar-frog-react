@@ -31,7 +31,7 @@ const FooterLinkSection = () => {
 
             <div className='space-x-6'>
               <button className='bg-[#FBA32C] text-[#1E1510] font2 lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px]'>BUY ON OKX</button>
-              <button className='border border-[#FBA32C] text-[#FBA32C] font2 lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px]'>TOTALL SUPPLY</button>
+              <button className='border border-[#FBA32C] hover:bg-[#301F0C] text-[#FBA32C] font2 lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px]'>TOTALL SUPPLY</button>
             </div>
 
           </div>
