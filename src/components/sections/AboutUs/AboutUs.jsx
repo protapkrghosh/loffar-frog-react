@@ -7,7 +7,7 @@ const AboutUs = () => {
     <div className='xl:mt-[185px]'>
       <Container>
 
-        <div className='flex lg:space-x-4'>
+        <div className='flex items-center lg:space-x-4'>
 
           <div className='lg:w-[60%]'>
             <p className='text-[#FBA32C] text-[105px] font-pantonRust font-medium leading-[126px] tracking-[2.1px] lg:mb-[24px]'>about Us frog</p>
@@ -23,7 +23,7 @@ const AboutUs = () => {
           </div>
 
           <div className='lg:w-[40%]'>
-            <img src={aboutImg} alt="image" />
+            <img className='lg:ml-[50px]' src={aboutImg} alt="image" />
           </div>
         </div>
       </Container>
