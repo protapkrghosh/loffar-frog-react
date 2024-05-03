@@ -83,7 +83,7 @@ const Tokenomics = () => {
             {/* card 2 */}
             <div className='absolute xl:top-[280px] xl:right-[-60px]'>
               <p className='text-[#B2ACA8] font-passeroOne text-[24px] lg:leading-[40.8px] lg:tracking-[0.48px]'>Airdrop</p>
-              <p className='text-[#FBA32C] font-pantonRust lg:text-[47px] font-medium leading-[56.4px] lg:tracking-[0.47px]'>05%</p>
+              <p className='text-[#FE7339] font-pantonRust lg:text-[47px] font-medium leading-[56.4px] lg:tracking-[0.47px]'>05%</p>
             </div>
 
             {/* card 3 */}
