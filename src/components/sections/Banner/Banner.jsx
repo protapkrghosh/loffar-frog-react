@@ -2,8 +2,12 @@ import bannerBg from "@/assets/images/Rectangle.png"
 import frogCard from "@/assets/images/Group.png"
 import Container from "../Container/Container";
 import { useEffect, useState } from "react";
+import { FiCopy } from "react-icons/fi";
+import { MdLibraryAddCheck } from "react-icons/md";
+import toast from 'react-hot-toast';
 
 const Banner = () => {
+  const [copied, setCopied] = useState(false);
   const [presalePercentage, setPresalePercentage] = useState(2);
 
   // Dynamic timer
@@ -59,6 +63,21 @@ const Banner = () => {
     );
   });
 
+
+  // Copy the contact ID =============
+  const copyLink = () => {
+    if (!copied) {
+      navigator.clipboard.writeText('0xaa86d4542969389b57936be83e5c888de001a95e').then(() => {
+        toast.success('Token copied');
+        setCopied(true);
+
+        setTimeout(() => {
+          setCopied(false);
+        }, 2000);
+      });
+    }
+  };
+
   return (
     <div>
       <div>
@@ -106,6 +125,19 @@ const Banner = () => {
                       <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-9"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
 
                       <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px]">Send Sol To This Wallet</p>
+
+                      {/* Copied text */}
+                      {/* <div className='flex justify-center md:justify-start'>
+                        <div className="flex justify-center items-center text-[14px] bg-[#FBA32C] py-2 rounded-[6px] w-fit px-3">
+                          <p className="text-[#1E1510] font-passeroOne mr-2 md:mr-5">0xaa86d4542969389b57936be83e5c888de001a95e</p>
+                          <button onClick={() => { setCopied(!copied); copyLink() }}>
+                            {
+                              copied ? <MdLibraryAddCheck className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" /> :
+                                <FiCopy className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" />
+                            }
+                          </button>
+                        </div>
+                      </div> */}
                     </div>
                   </div>
                 </div>
