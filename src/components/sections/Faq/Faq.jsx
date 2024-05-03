@@ -42,7 +42,7 @@ const Faq = () => {
 
           <div className='lg:w-[45%] lg:mt-[-75px]'>
 
-            <p className='text-[#FBA32C] font-pantonRust text-[115px] leading-[138px] tracking-[2.3px] lg:mb-[16px]'>Faq</p>
+            <p className='text-[#FBA32C] font-pantonRust font-medium text-[115px] leading-[138px] tracking-[2.3px] lg:mb-[16px]'>Faq</p>
 
             <p className='text-[#B2ACA8] font-passeroOne text-[20px] lg:leading-[34px] lg:tracking-[0.4px] lg:mb-[50px] xl:w-[90%]'>Explore our FAQ section for quick answers to common queries about Loffar Frog, your gateway to creativity and innovation.</p>
 

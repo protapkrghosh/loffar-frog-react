@@ -10,7 +10,7 @@ const AboutUs = () => {
         <div className='flex lg:space-x-4'>
 
           <div className='lg:w-[60%]'>
-            <p className='text-[#FBA32C] text-[105px] font-pantonRust leading-[126px] tracking-[2.1px] lg:mb-[24px]'>about Us frog</p>
+            <p className='text-[#FBA32C] text-[105px] font-pantonRust font-medium leading-[126px] tracking-[2.1px] lg:mb-[24px]'>about Us frog</p>
             <p className='text-[#B2ACA8] text-[24px] font-passeroOne leading-[40.8px] tracking-[0.48px] lg:mb-[16px]'>Welcome to Loffar Frog, where imagination meets innovation. As the whimsical minds behind the scenes, we're dedicated to crafting delightful experiences that enchant and inspire. </p>
 
             <p className='text-[#B2ACA8] text-[24px] font-passeroOne leading-[40.8px] tracking-[0.48px] lg:mb-[40px]'>With a playful approach to design and a commitment to excellence, we hop into every project with boundless enthusiasm. Dive into our world of creativity and let Loffar Frog redefine the art of storytelling. Join us on this adventure, where every leap brings us closer to new horizons.</p>
