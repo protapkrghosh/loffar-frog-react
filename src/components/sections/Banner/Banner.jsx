@@ -90,7 +90,7 @@ const Banner = () => {
                 <div className="relative">
                   <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[145px] 2xl:bottom-[185px] left-[64px] 2xl:left-[95px]">
+                  <div className="absolute bottom-[15px] 2xl:bottom-[0px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
@@ -122,13 +122,13 @@ const Banner = () => {
                     </div>
 
                     <div>
-                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] tracking-[0.56px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-12 w-fit"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
+                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] tracking-[0.56px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-12 w-fit capitalize"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
 
                       <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px]">Send Sol To This Wallet</p>
 
                       {/* Copied text */}
                       <div className='flex justify-center md:justify-start -ml-4 2xl:-ml-12 my-3'>
-                        <div className="flex justify-center items-center text-[14px] bg-[#FBA32C] py-[9px] rounded-[6px] w-fit px-[11px]">
+                        <div className="flex justify-center items-center text-[14px] border border-[#d88c28] bg-[#FBA32C] py-[9px] rounded-[6px] w-fit px-[11px]">
                           <p className="text-[#1E1510] font-passeroOne mr-2 md:mr-3">0xaa86d4542969389b57936be83e5c888de001a95e</p>
                           <button onClick={() => { setCopied(!copied); copyLink() }}>
                             {
@@ -137,6 +137,18 @@ const Banner = () => {
                             }
                           </button>
                         </div>
+                      </div>
+
+                      <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px] -ml-6">HOW TO PARTICIPATE IN PRESALE</p>
+
+                      <div className="text-[#1E1510] text-[14px] text-center font-passeroOne leading-[16px] tracking-[0.56px] capitalize mt-[8px] mb-[12px] -ml-[75px]">
+                        <p className="bg-[#efc69bc2] border-[0.5px] border-[#EDBB8D] rounded-[6px] py-[6px]">Send Sol to our provided wallet.</p>
+
+                        <p className="bg-[#efc69bc2] border-[0.5px] border-[#EDBB8D] rounded-[6px] py-[6px] my-[6px]">Minimum: 0.50 Sol and Maximum 150 Sol From A Single Wallet.</p>
+
+                        <p className="bg-[#efc69bc2] border-[0.5px] border-[#EDBB8D] rounded-[6px] py-[6px]">tokens will be airdropped to the sending wallet.</p>
+
+                        <p className="bg-[#FBA32C] border-[0.6px] border-[#FBA32C] rounded-[6px] py-[6px] mt-3 ml-2">NB: Don't use a Exchange to send SOL! Use your own wallet..</p>
                       </div>
                     </div>
                   </div>
