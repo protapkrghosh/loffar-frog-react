@@ -48,7 +48,7 @@ const Banner = () => {
     }
     timerComponents.push(
       <span key={interval} className="relative">
-        <span className="text-[#1E1510] text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] py-3">
+        <span className="text-[#1E1510] text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] 2xl:mx-[26px] py-3">
           {timeLeft[interval]}
         </span>{" "}
 
@@ -69,29 +69,29 @@ const Banner = () => {
             <div className="md:flex justify-between items-center gap-x-[91px]">
               <div className="md:w-[40%] xl:w-[45%] 2xl:w-[40%]">
                 <div className="relative">
-                  <img src={frogCard} alt="Image" />
+                  <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[355px] 2xl:bottom-[305px] left-[64px] 2xl:left-[90px]">
+                  <div className="absolute bottom-[268px] 2xl:bottom-[306px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
                     {/* Timers */}
                     <div className="relative">
-                      <div className="h-[62px] w-[260px] bg-[#FBA32C] rounded-[8px]" />
+                      <div className="h-[62px] xl:w-[240px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] 2xl:-ml-[18px]" />
                       {timerComponents.length ?
                         (
                           <div className="absolute -top-1">
-                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px]'>
+                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px] 2xl:-left-7'>
                               {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                             </div>
 
-                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 absolute top-[16px] left-[55px]">
+                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 2xl:space-x-[68px] absolute top-[16px] left-[55px] 2xl:left-[40px]">
                               <span>:</span>
                               <span>:</span>
                               <span>:</span>
                             </div>
 
-                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] absolute top-[43px] left-[25px]">
+                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] 2xl:space-x-[56px] absolute top-[43px] left-[25px] 2xl:left-[4px]">
                               <span>Day</span>
                               <span>Hrs</span>
                               <span>Mins</span>
