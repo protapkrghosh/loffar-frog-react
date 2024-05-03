@@ -17,6 +17,7 @@ const AboutUs = () => {
 
             <div className='space-x-6'>
               <button className='bg-[#FBA32C] text-[#1E1510] font-passeroOne lg:text-[24px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] px-[24px] py-[12px]'>BUY Now</button>
+              
               <button className='border border-[#FBA32C] bg-[#1E1510] text-[#FBA32C] font-passeroOne lg:text-[24px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] px-[24px] py-[12px]'>Learn More</button>
             </div>
           </div>
