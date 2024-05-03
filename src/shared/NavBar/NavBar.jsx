@@ -119,7 +119,7 @@ const NavBar = () => {
 
 
             <Link to="home" smooth={true} offset={-30} duration={600} className="cursor-pointer flex items-center">
-              <img src={logo} alt="Logo" className="w-[50px] mr-4" />
+              <img src={logo} alt="Logo" className="w-[50px]" />
             </Link>
 
             <div className="md:block hidden">
