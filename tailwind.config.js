@@ -18,7 +18,8 @@ module.exports = {
       },
       extend: {
          fontFamily: {
-            gagalin: "Gagalin",
+            pantonRust: "Panton Rust Heavy",
+            passeroOne: "Passero One",
          },
          colors: {
             border: "hsl(var(--border))",
