@@ -90,7 +90,7 @@ const Banner = () => {
                 <div className="relative">
                   <img src={frogCard} alt="Image" className="2xl:scale-110"/>
 
-                  <div className="absolute bottom-[268px] 2xl:bottom-[247px] left-[64px] 2xl:left-[95px]">
+                  <div className="absolute bottom-[145px] 2xl:bottom-[185px] left-[64px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
                     <p className="text-[#1E1510] text-[14px] font-passeroOne leading-[16px] mt-[9px] mb-[11px]">Token Will Be On Raydium My 1fst 2024</p>
 
@@ -122,22 +122,22 @@ const Banner = () => {
                     </div>
 
                     <div>
-                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-9"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
+                      <p className="bg-[#efc79b] text-[#1E1510] text-center text-[14px] font-passeroOne leading-[16px] tracking-[0.56px] rounded-[6px] pr-3 py-[6px] mt-[18px] mb-2 -ml-4 2xl:-ml-12 w-fit"><span className="bg-[#FBA32C] pl-3 pr-[5px] py-[8px] rounded-[6px]">over 2 Million</span> Contribution Received and Growing</p>
 
                       <p className="text-[#624737] text-[18px] font-pantonRust font-medium leading-[21px]">Send Sol To This Wallet</p>
 
                       {/* Copied text */}
-                      {/* <div className='flex justify-center md:justify-start'>
-                        <div className="flex justify-center items-center text-[14px] bg-[#FBA32C] py-2 rounded-[6px] w-fit px-3">
-                          <p className="text-[#1E1510] font-passeroOne mr-2 md:mr-5">0xaa86d4542969389b57936be83e5c888de001a95e</p>
+                      <div className='flex justify-center md:justify-start -ml-4 2xl:-ml-12 my-3'>
+                        <div className="flex justify-center items-center text-[14px] bg-[#FBA32C] py-[9px] rounded-[6px] w-fit px-[11px]">
+                          <p className="text-[#1E1510] font-passeroOne mr-2 md:mr-3">0xaa86d4542969389b57936be83e5c888de001a95e</p>
                           <button onClick={() => { setCopied(!copied); copyLink() }}>
                             {
-                              copied ? <MdLibraryAddCheck className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" /> :
-                                <FiCopy className="text-[15px] md:text-[20px] cursor-pointer text-[#1E1510]" />
+                              copied ? <MdLibraryAddCheck className="text-[13px] cursor-pointer text-[#1E1510]" /> :
+                                <FiCopy className="text-[13px] cursor-pointer text-[#1E1510]" />
                             }
                           </button>
                         </div>
-                      </div> */}
+                      </div>
                     </div>
                   </div>
                 </div>
