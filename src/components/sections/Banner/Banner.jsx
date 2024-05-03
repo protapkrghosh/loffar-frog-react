@@ -52,7 +52,7 @@ const Banner = () => {
     }
     timerComponents.push(
       <span key={interval} className="relative">
-        <span className="text-[#1E1510] text-[16px] lg:text-[15px] xl:text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] xl:mx-[24px] 2xl:mx-[26px] py-3">
+        <span className="text-[#1E1510] text-[16px] lg:text-[15px] xl:text-[15.99px] font-semibold font-pantonRust rounded-[8px] mx-[20px] lg:mx-[24px] xl:mx-[24px] 2xl:mx-[26px] py-3">
           {timeLeft[interval]}
         </span>{" "}
 
@@ -96,21 +96,21 @@ const Banner = () => {
 
                     {/* Timers */}
                     <div className="relative">
-                      <div className="h-[58px] w-[235px] xl:w-[260px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] xl:-ml-[18px] 2xl:-ml-[18px]" />
+                      <div className="h-[58px] w-[235px] lg:w-[250px] xl:w-[260px] 2xl:w-[265px] bg-[#FBA32C] rounded-[8px] lg:-ml-[20px] xl:-ml-[18px] 2xl:-ml-[18px]" />
                       {timerComponents.length ?
                         (
                           <div className="absolute -top-1">
-                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px] xl:-left-[24px] 2xl:-left-7'>
+                            <div className='flex justify-center text-[#1E1510] font-pantonRust absolute top-[14px] lg:-left-[27px] xl:-left-[24px] 2xl:-left-7'>
                               {timerComponents.length ? timerComponents : <span>Time's up!</span>}
                             </div>
 
-                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 lg:space-x-[55px] xl:space-x-[63px] 2xl:space-x-[68px] absolute top-[16px] left-[55px] xl:left-[40px] 2xl:left-[40px]">
+                            <div className="text-[15px] text-[#1E1510] font-pantonRust font-semibold leading-[19px] space-x-14 lg:space-x-[62px] xl:space-x-[63px] 2xl:space-x-[68px] absolute top-[16px] left-[55px] lg:left-[36px] xl:left-[40px] 2xl:left-[40px]">
                               <span>:</span>
                               <span>:</span>
                               <span>:</span>
                             </div>
 
-                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] lg:space-x-[44px] xl:space-x-[53px] 2xl:space-x-[56px] absolute top-[43px] left-[25px] xl:left-[4px] 2xl:left-[4px]">
+                            <div className="text-[8.6px] text-[#1E1510] font-passeroOne leading-[10px] space-x-[45px] lg:space-x-[53px] xl:space-x-[53px] 2xl:space-x-[56px] absolute top-[43px] left-[25px] lg:left-[2px] xl:left-[4px] 2xl:left-[4px]">
                               <span>Day</span>
                               <span>Hrs</span>
                               <span>Mins</span>
