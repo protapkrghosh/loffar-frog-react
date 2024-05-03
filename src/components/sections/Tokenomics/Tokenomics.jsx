@@ -1,8 +1,29 @@
 import React from 'react';
 import Container from '../Container/Container';
 import tokenomicsImg from '@/assets/images/Group 1171275346.png';
+import { useState } from 'react';
+import toast from 'react-hot-toast';
+import { IoCopy } from "react-icons/io5";
+import { MdLibraryAddCheck } from "react-icons/md";
 
 const Tokenomics = () => {
+
+  const [copied, setCopied] = useState(false);
+
+  // Copy the contact ID =============
+  const copyLink = () => {
+    if (!copied) {
+      navigator.clipboard.writeText('CA: 0xaa86d4542969389b57936be83e5c888de001a95e').then(() => {
+        toast.success('Copied!');
+        setCopied(true);
+
+        setTimeout(() => {
+          setCopied(false);
+        }, 2000);
+      });
+    }
+  };
+
   return (
     <div className='lg:mt-[200px]'>
       <Container>
@@ -27,6 +48,20 @@ const Tokenomics = () => {
               <div>
                 <p className='text-[#FBA32C] font-passeroOne text-[20px] lg:leading-[32px] lg:tracking-[0.4px] lg:mb-[-16px]'>TOKEN TICKER</p>
                 <p className='text-[#FBA32C] font-passeroOne text-[44px] lg:leading-[70.4px] lg:tracking-[0.88px] capitalize'>$FROG</p>
+              </div>
+            </div>
+
+
+            {/* Copied text */}
+            <div className='flex justify-center md:justify-start mt-10'>
+              <div className="flex justify-center items-center text-[14px] lg:text-[16px] xl:text-[19px] bg-[#DF355F] border py-3 xl:py-[15px] rounded-full w-full px-5 xl:px-6">
+                <p className="text-[#D0CFCF] mr-2 md:mr-5">CA: 0xaa86d4542969389b57936be83e5c888de001a95e</p>
+                <button onClick={() => { setCopied(!copied); copyLink() }}>
+                  {
+                    copied ? <MdLibraryAddCheck className="text-[15px] md:text-[20px] cursor-pointer text-[#fff]" /> :
+                      <IoCopy className="text-[15px] md:text-[20px] cursor-pointer text-[#fff]" />
+                  }
+                </button>
               </div>
             </div>
 
