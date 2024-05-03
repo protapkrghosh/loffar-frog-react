@@ -1,40 +1,22 @@
 import Container from '@/components/sections/Container/Container';
-import footerLogo from '@/assets/images/loffar logo 2.png';
-import { FaTwitter } from "react-icons/fa";
-import { FaTelegramPlane } from "react-icons/fa";
-import { PiGithubLogoFill } from "react-icons/pi";
-
-
+import React from 'react';
 
 const Footer = () => {
   return (
-    <div className='lg:mt-[200px] bg-[#1E130C]'>
+    <div className='bg-[#FBA32C]'>
       <Container>
+        {/* second part footer  */}
+        <div className='flex justify-between items-center py-[33px]'>
 
-        <div className='flex justify-between lg:pt-[88px] lg:pb-[70px]'>
+          <div className='flex items-center gap-[40px]'>
+            <p className='text-[#1E1510] font2 text-[20px] leading-[36px] uppercase'>loffar frog © {new Date().getFullYear()}</p>
+            <p className='text-[#1E1510] font2 text-[20px] leading-[36px] uppercase cursor-pointer'>hi@loffar frog.com</p>
+          </div>
 
           <div>
-            <img className='w-auto' src={footerLogo} alt="image" />
-          </div>
-
-          <div className='flex lg:gap-[32px] items-center'>
-
-            <div className='flex gap-[14px]'>
-              <span className='text-[#F7B501] px-3 py-3 border border-[#F7B501] rounded-[5px]'><FaTwitter className='w-[27px] h-[27px]' /></span>
-
-              <span className='text-[#F7B501] px-3 py-3 border border-[#F7B501] rounded-[5px]'><FaTelegramPlane className='w-[27px] h-[27px]' /></span>
-
-              <span className='text-[#F7B501] px-3 py-3 border border-[#F7B501] rounded-[5px]'><PiGithubLogoFill className='w-[27px] h-[27px]' /></span>
-            </div>
-
-            <div className='space-x-6'>
-              <button className='bg-[#FBA32C] text-[#1E1510] font2 lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px]'>BUY ON OKX</button>
-              <button className='border border-[#FBA32C] text-[#FBA32C] font2 lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px]'>TOTALL SUPPLY</button>
-            </div>
-
+            <p className='text-[#1E1510] font2 text-[20px] leading-[32px] uppercase'>© 2023 , KINGDOM OF KEK, All Rights Reserved</p>
           </div>
         </div>
-
       </Container>
     </div>
   );
