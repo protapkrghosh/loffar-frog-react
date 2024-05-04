@@ -95,23 +95,23 @@ const NavBar = () => {
             <ul className={`md:flex md:items-center md:py-3 pt-5 pb-7 space-x-1 space-y-4 md:space-y-0 absolute md:static md:z-auto z-[-1px] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-linear opacity-0 md:opacity-100 rounded-[5px] ${open ? 'top-[100px] opacity-100 bg-[#ce964d] z-10' : 'top-[-490px]'}`}>
 
               <li>
-                <Link to="about" smooth={true} offset={-30} duration={600} className={`text-[18px] font-passeroOne ml-[2px] lg:ml-5 md:ml-3 cursor-pointer rounded-[4px] lg:px-4 md:px-2 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "home" ? ' text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("home")}>About</Link>
+                <Link to="about" smooth={true} offset={-30} duration={600} className={`text-[18px] font-passeroOne ml-[2px] lg:ml-5 md:ml-3 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "home" ? ' text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("home")}>About</Link>
               </li>
 
               <li>
-                <Link to="tokenomics" smooth={true} offset={-140} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "tokenomics" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("tokenomics")}>Tokenomics</Link>
+                <Link to="tokenomics" smooth={true} offset={-140} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "tokenomics" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("tokenomics")}>Tokenomics</Link>
               </li>
 
               <li>
-                <Link to="roadmap" smooth={true} offset={-160} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "roadmap" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("roadmap")}>Roadmap</Link>
+                <Link to="roadmap" smooth={true} offset={-160} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "roadmap" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("roadmap")}>Roadmap</Link>
               </li>
 
               <li>
-                <Link to="partners" smooth={true} offset={-220} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "partners" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("partners")}>Faq</Link>
+                <Link to="partners" smooth={true} offset={-220} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "partners" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("partners")}>Faq</Link>
               </li>
 
               <div className="block md:hidden">
-                <div className="flex items-center">
+                <div className="">
                   <div className='flex gap-[16px]'>
                     <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaXTwitter className='w-[24px] h-[24px]' /></a>
 
@@ -120,14 +120,17 @@ const NavBar = () => {
                     <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><PiGithubLogoFill className='w-[24px] h-[24px]' /></a>
                   </div>
 
-                  <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal ml-4 uppercase">Sign in</Button>
-                  <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal ml-4 uppercase">Log  in</Button>
+                  <div className="mr-9 mt-5">
+                    <Button className="mb-3 bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal uppercase w-full">Sign in</Button>
+                    <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal uppercase w-full">Log  in</Button>
+                  </div>
+
                 </div>
               </div>
             </ul>
 
 
-            <Link to="home" smooth={true} offset={-30} duration={600} className="hidden lg:block cursor-pointer flex items-center">
+            <Link to="home" smooth={true} offset={-30} duration={600} className="md:hidden lg:block cursor-pointer flex items-center">
               <img src={logo} alt="Logo" className="w-[45px] 2xl:w-[50px] ml-5 md:ml-0" />
             </Link>
 
