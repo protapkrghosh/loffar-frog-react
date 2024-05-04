@@ -4,10 +4,10 @@ import faqImg from '@/assets/images/Group 1171275370.png';
 
 const Faq = () => {
   return (
-    <div className='my-[60px] md:my-[100px] xl:mt-[430px] lg:mt-[350px] md:mt-[90px] mt-[40px]' id='partners'>
+    <div className='my-[60px] md:my-[100px] xl:mt-[430px] lg:mt-[350px] md:mt-[100px] mt-[60px]' id='partners'>
       <Container>
 
-        <div className='flex items-center flex-col-reverse lg:flex-row 2xl:space-x-[40px] xl:space-x-[90px] gap-x-10 xl:gap-x-0'>
+        <div className='flex items-center flex-col-reverse lg:flex-row 2xl:space-x-[40px] xl:space-x-[50px] lg:space-x-[5px] gap-x-10 xl:gap-x-0'>
 
           {/* left side */}
           <div className='lg:w-[51%] mt-10 lg:mt-0'>
@@ -48,7 +48,7 @@ const Faq = () => {
 
 
             <div className=''>
-              <img className='2xl:w-auto' src={faqImg} alt="image" />
+              <img className='lg:w-auto md:w-[90%]' src={faqImg} alt="image" />
             </div>
 
           </div>
