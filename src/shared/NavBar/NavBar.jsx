@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import logo from "@/assets/images/loffar logo 2.png";
 import { Link } from "react-scroll";
 import { Button } from "@/components/ui/button";
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 
@@ -113,7 +113,7 @@ const NavBar = () => {
               <div className="block md:hidden">
                 <div className="flex items-center">
                   <div className='flex gap-[16px]'>
-                    <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaTwitter className='w-[24px] h-[24px]' /></a>
+                    <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaXTwitter className='w-[24px] h-[24px]' /></a>
 
                     <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaTelegramPlane className='w-[24px] h-[24px]' /></a>
 
@@ -135,7 +135,7 @@ const NavBar = () => {
             <div className="md:block hidden">
               <div className="flex items-center">
                 <div className='flex gap-[16px]'>
-                  <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaTwitter className='w-[24px] h-[24px]' /></a>
+                  <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaXTwitter className='w-[24px] h-[24px]' /></a>
 
                   <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><FaTelegramPlane className='w-[24px] h-[24px]' /></a>
 

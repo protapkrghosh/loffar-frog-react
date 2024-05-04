@@ -1,6 +1,6 @@
 import Container from '@/components/sections/Container/Container';
 import footerLogo from '@/assets/images/loffar logo 2.png';
-import { FaTwitter } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaTelegramPlane } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
 
@@ -21,7 +21,7 @@ const FooterLinkSection = () => {
             <div className='flex lg:gap-[32px] items-center'>
               <div className='flex gap-[14px] mr-6 lg:mr-0'>
                 <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]' data-aos="fade-up"
-                  data-aos-duration="600"><FaTwitter className='w-[27px] h-[27px]' /></a>
+                  data-aos-duration="600"><FaXTwitter className='w-[27px] h-[27px]' /></a>
 
                 <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]' data-aos="fade-up"
                   data-aos-duration="1200"><FaTelegramPlane className='w-[27px] h-[27px]' /></a>
@@ -50,7 +50,7 @@ const FooterLinkSection = () => {
               <img className='w-auto' src={footerLogo} alt="image" />
 
               <div className='flex gap-[14px]'>
-                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTwitter className='w-[27px] h-[27px]' /></a>
+                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaXTwitter className='w-[27px] h-[27px]' /></a>
 
                 <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTelegramPlane className='w-[27px] h-[27px]' /></a>
 
