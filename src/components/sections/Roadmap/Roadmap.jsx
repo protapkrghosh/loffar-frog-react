@@ -5,13 +5,13 @@ import roadmapCardLogo from '@/assets/images/roadmap-logo.png';
 
 const Roadmap = () => {
   return (
-    <div className='lg:mt-[214px] md:mt-[90px]'>
+    <div className='lg:mt-[214px] md:mt-[90px] mt-[60px]'>
       <Container>
         {/* ---------------- roadmap text ---------------- */}
         <div>
-          <p className='text-[#FBA32C] lg:text-start text-center font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px] md:mb-[8px]'>ROADMAP</p>
+          <p className='text-[#FBA32C] lg:text-start text-center font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px] md:mb-[8px] mb-[6px]'>ROADMAP</p>
 
-          <p className='text-[#B2ACA8] lg:text-start text-center font-passeroOne lg:text-[20px] md:text-[16px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%]'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
+          <p className='text-[#B2ACA8] lg:text-start text-center font-passeroOne lg:text-[20px] md:text-[16px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%] lg:px-0 md:px-5 px-3'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
         </div>
 
         {/* ----------- roadmap section ------------ */}
@@ -23,8 +23,10 @@ const Roadmap = () => {
             <img className='2xl:w-[93%] xl:w-[92%] lg:w-[92%] mx-auto' src={roadmapImg} alt="image" />
           </div>
 
+
+          {/* -------------- Large Device ------------ */}
           {/* text  */}
-          <div className='lg:mt-0 md:mt-[14px]'>
+          <div className='hidden lg:block lg:mt-0 md:mt-[14px]'>
 
             {/* ------------- card 1 -------------- */}
             <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
@@ -85,6 +87,88 @@ const Roadmap = () => {
               <div className='flex items-center md:gap-4'>
                 <img className='lg:w-auto' src={roadmapCardLogo} alt="image" />
                 <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] lg:leading-[21.6px] tracking-[1.44px]'>First CEX Listing</p>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+          {/* -------------- Small Device ------------ */}
+          {/* text  */}
+          <div className='block lg:hidden lg:mt-0 md:mt-[14px] mt-[12px]'>
+
+            <div className='grid md:grid-cols-2 grid-cols-1 ml-32'>
+
+              {/* ------------- card 1 -------------- */}
+              <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
+                <p className='text-[#FBA32C] font-pantonRust font-medium md:text-[26px] text-[20px] lg:leading-[36px] lg:tracking-[0.3px] md:mb-[14px] mb-[8px]'>PHASE 1</p>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne md:text-[18px] text-[14px]'>Uniswap Launch</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne md:text-[18px] text-[14px]'>1,000+ Holders</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne md:text-[18px] text-[14px]'>CoinGecko/Coinmarketcap</p>
+                </div>
+
+              </div>
+
+              {/* ------------- card 2 -------------- */}
+              <div className='2xl:ml-[715px] xl:ml-[586px] lg:ml-[455px] 2xl:mt-[-337px] xl:mt-[-305px] lg:mt-[-270px]'>
+                <p className='text-[#FBA32C] font-pantonRust font-medium md:text-[26px] text-[20px] lg:leading-[36px] lg:tracking-[0.3px] md:mb-[14px] mb-[8px]'>PHASE 2</p>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] text-[14px]'>KOL Marketing</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] text-[14px]'>Meme Contast</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne md:text-[18px] text-[14px]'>First CEX Listing</p>
+                </div>
+
+              </div>
+
+              {/* ------------- card 3 -------------- */}
+              <div className='2xl:ml-[1245px] xl:ml-[995px] lg:ml-[760px] 2xl:mt-[-457px] xl:mt-[-397px] lg:mt-[-345px]'>
+                <p className='text-[#FBA32C] font-pantonRust font-medium md:text-[26px] text-[20px] lg:leading-[36px] lg:tracking-[0.3px] md:mb-[14px] mb-[8px]'>PHASE 3</p>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] text-[14px]'>KOL Marketing</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3 md:mb-[14px] mb-[10px]'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] text-[14px]'>Meme Contast</p>
+                </div>
+
+                <div className='flex items-center md:gap-4 gap-3'>
+                  <img className='md:w-[6%] w-[5%]' src={roadmapCardLogo} alt="image" />
+                  <p className='text-[#B2ACA8] font-passeroOne font-medium md:text-[18px] text-[14px]'>First CEX Listing</p>
+                </div>
+
               </div>
 
             </div>
