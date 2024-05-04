@@ -86,7 +86,7 @@ const NavBar = () => {
         <div className="w-full top-0 left-0 z-10 bg-[#FBA32C] rounded-[10px]">
           <div className={`md:flex justify-between items-center ${color ? 'py-3 2xl:py-5' : 'py-3 2xl:py-5'}`}>
 
-            <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-6 cursor-pointer md:hidden">
+            <div onClick={() => setOpen(!open)} className="text-3xl absolute right-8 top-[52px] cursor-pointer md:hidden">
               {
                 open ? <IoClose className="text-[#DF355F]" /> : <IoMenu className="text-[#DF355F]" />
               }
@@ -119,7 +119,7 @@ const NavBar = () => {
 
 
             <Link to="home" smooth={true} offset={-30} duration={600} className="cursor-pointer flex items-center">
-              <img src={logo} alt="Logo" className="w-[45px] 2xl:w-[50px]" />
+              <img src={logo} alt="Logo" className="w-[45px] 2xl:w-[50px] ml-5 md:ml-0" />
             </Link>
 
             <div className="md:block hidden">
