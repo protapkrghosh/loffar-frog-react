@@ -144,7 +144,7 @@ const NavBar = () => {
                   <a href="" target='_blank' className='text-[#1E1510] p-2 2xl:p-3 border border-[#1E1510] hover:bg-[#fcb95f] rounded-[5px] duration-300'><PiGithubLogoFill className='w-[24px] h-[24px]' /></a>
                 </div>
 
-                <div className="hidden lg:block h-[1px] w-[75px] bg-[#1E1510] opacity-70 rotate-90 xl:-mx-4 md:-mx-7" />
+                <div className="hidden lg:block h-[1px] 2xl:w-[91px] w-[75px] bg-[#1E1510] opacity-70 rotate-90 xl:-mx-4 md:-mx-7" />
 
                 <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal xl:mr-5 md:mr-3 uppercase">Sign in</Button>
                 <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal lg:mr-5 md:mr-3 uppercase">Log  in</Button>
