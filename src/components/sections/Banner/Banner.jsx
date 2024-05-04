@@ -79,7 +79,7 @@ const Banner = () => {
   };
 
   return (
-    <div>
+    <div id="home">
       <div>
         <img src={bannerBg} alt="Image" className="h-[1000px] lg:h-[1150px]  xl:h-[1150px] 2xl:h-auto w-full -mt-[125px] -mb-[800px] lg:-mb-[950px] xl:-mb-[928px] 2xl:-mb-[1050px] hidden lg:block" />
 
@@ -88,7 +88,7 @@ const Banner = () => {
             <div className="lg:flex justify-between items-center gap-x-[35px] xl:gap-x-[91px]">
               <div className="lg:w-[60%] xl:w-[50%] 2xl:w-[40%]">
                 <div className="relative">
-                  <img src={frogCard} alt="Image" className="h-[700px] md:h-[860px] lg:h-[840px] xl:h-[820px] 2xl:h-[820px] md:w-[550px] lg:w-auto xl:scale-105 2xl:scale-110 mx-auto lg:mx-0"/>
+                  <img src={frogCard} alt="Image" className="h-[700px] md:h-[860px] lg:h-[840px] xl:h-[820px] 2xl:h-[820px] md:w-[550px] lg:w-auto xl:scale-105 2xl:scale-110 mx-auto lg:mx-0" />
 
                   <div className="absolute bottom-[60px] md:bottom-[55px] lg:bottom-[48px] xl:bottom-[40px] 2xl:bottom-[25px] left-[65px] md:left-[170px] lg:left-[100px] xl:left-[90px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[12px] md:text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>
@@ -157,11 +157,14 @@ const Banner = () => {
 
               {/* Banner Content */}
               <div className="lg:w-[40%] xl:w-[50%] 2xl:w-[60%] mt-10 md:mt-20 lg:mt-0">
-                <h3 className="text-[19px] md:text-[32px] lg:text-[27px] xl:text-[40px] 2xl:text-[60px] text-[#FBA32C] text-center lg:text-start font-pantonRust leading-[50px] md:leading-[72px] tracking-[1.2px]">Welcome to</h3>
+                <h3 className="text-[19px] md:text-[32px] lg:text-[27px] xl:text-[40px] 2xl:text-[60px] text-[#FBA32C] text-center lg:text-start font-pantonRust leading-[50px] md:leading-[72px] tracking-[1.2px]" data-aos="fade-up"
+                  data-aos-duration="1000">Welcome to</h3>
 
-                <h1 className="text-[30px] md:text-[60px] lg:text-[48px] xl:text-[77px] 2xl:text-[116px] text-[#FBA32C] text-center lg:text-start font-pantonRust 2xl:leading-[150px] tracking-[2.5px] -mt-3 2xl:mt-[8px]">Loffar frog</h1>
+                <h1 className="text-[30px] md:text-[60px] lg:text-[48px] xl:text-[77px] 2xl:text-[116px] text-[#FBA32C] text-center lg:text-start font-pantonRust 2xl:leading-[150px] tracking-[2.5px] -mt-3 2xl:mt-[8px]" data-aos="fade-up"
+                  data-aos-duration="2000">Loffar frog</h1>
 
-                <p className="lg:text-[15px] xl:text-[15px] 2xl:text-[24px] text-[#B2ACA8]  text-center lg:text-start font-passeroOne leading-[25px] xl:leading-[35px] 2xl:leading-[40px] tracking-[0.48px] mt-3 md:mt-0 lg:mt-[15px] xl:mt-0 2xl:mt-[24px] mb-[40px] 2xl:mb-[50px] xl:w-[95%] 2xl:w-full">Where imagination leaps beyond boundaries, crafting worlds of whimsy and wonder. Dive into our pond of creativity and join the adventure today!</p>
+                <p className="lg:text-[15px] xl:text-[15px] 2xl:text-[24px] text-[#B2ACA8]  text-center lg:text-start font-passeroOne leading-[25px] xl:leading-[35px] 2xl:leading-[40px] tracking-[0.48px] mt-3 md:mt-0 lg:mt-[15px] xl:mt-0 2xl:mt-[24px] mb-[40px] 2xl:mb-[50px] xl:w-[95%] 2xl:w-full" data-aos="fade-up"
+                  data-aos-duration="3000">Where imagination leaps beyond boundaries, crafting worlds of whimsy and wonder. Dive into our pond of creativity and join the adventure today!</p>
 
                 <div className="flex justify-center lg:justify-normal">
                   <div className="space-y-3 md:space-x-5 lg:space-x-2 xl:space-x-7">

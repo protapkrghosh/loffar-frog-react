@@ -25,9 +25,10 @@ const Tokenomics = () => {
   };
 
   return (
-    <div className='xl:mt-[200px] lg:mt-[150px] md:mt-[80px] mt-[60px]'>
+    <div className='xl:mt-[200px] lg:mt-[150px] md:mt-[80px] mt-[60px]' id='tokenomics'>
       <Container>
-        <p className='text-[#FBA32C] font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] tracking-[2.3px] text-center lg:mb-[100px] md:mb-[50px] mb-[20px]'>TOKENOMICS</p>
+        <p className='text-[#FBA32C] font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] tracking-[2.3px] text-center lg:mb-[100px] md:mb-[50px] mb-[20px]' data-aos="fade-up"
+          data-aos-duration="1000">TOKENOMICS</p>
 
         {/* tokenomics contain section  */}
         <div className='lg:flex items-center relative'>
@@ -35,7 +36,8 @@ const Tokenomics = () => {
           {/* ----------------- tokenomics left text section ----------- */}
           <div className='lg:w-[50%] bg-[#342114] rounded-[32px] 2xl:p-[40px] xl:p-[30px] lg:p-[20px] md:p-[30px] p-[15px]'>
 
-            <p className='text-[#FBA32C] font-pantonRust xl:text-[40px] lg:text-[30px] md:text-[28px] text-[20px] lg:leading-[48px] lg:tracking-[0.4px] xl:mb-[24px] lg:mb-[18px] md:mb-[14px] mb-[10px]'>NO TAX. NO NONSENSE</p>
+            <p className='text-[#FBA32C] font-pantonRust xl:text-[40px] lg:text-[30px] md:text-[28px] text-[20px] lg:leading-[48px] lg:tracking-[0.4px] xl:mb-[24px] lg:mb-[18px] md:mb-[14px] mb-[10px]' data-aos="fade-up"
+              data-aos-duration="2000">NO TAX. NO NONSENSE</p>
 
             <p className='text-[#B2ACA8] font-passeroOne 2xl:text-[20px] xl:text-[17px] lg:text-[15px] md:text-[14px] text-[12px] xl:leading-[32px] lg:leading-[24px] capitalize lg:mb-[16px] md:mb-[12px] mb-[10px]'>In the magical realm, the $KEKE project has transformed. 92.3% tokens are in liquidity pool, LP tokens burnt, and contract renounced. The remaining 7.7% resides in a multi-sig wallet for future centralized exchange listings and liquidity pools, </p>
 
