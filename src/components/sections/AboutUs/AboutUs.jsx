@@ -18,9 +18,9 @@ const AboutUs = () => {
               <p className='text-[#B2ACA8] lg:text-start text-center xl:text-[24px] lg:text-[20px] md:text-[16px] text-[12px] font-passeroOne xl:leading-[40.8px] lg:leading-[30.8px] md:leading-[22.8px] lg:mb-[40px] md:mb-[24px] mb-[18px]'>With a playful approach to design and a commitment to excellence, we hop into every project with boundless enthusiasm. Dive into our world of creativity and let Loffar Frog redefine the art of storytelling. Join us on this adventure, where every leap brings us closer to new horizons.</p>
 
               <div className='md:space-x-6 space-x-3 lg:text-start text-center'>
-                <button className='bg-[#FBA32C] text-[#1E1510] font-passeroOne md:text-[24px] text-[16px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] md:px-[24px] px-[18px] md:py-[12px] py-[8px]'>BUY Now</button>
+                <button className='bg-[#FBA32C] hover:bg-transparent border border-[#FBA32C] text-[#1E1510] hover:text-[#FBA32C] font-passeroOne md:text-[24px] text-[16px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] md:px-[24px] px-[18px] md:py-[12px] py-[8px] duration-300'>BUY Now</button>
 
-                <button className='border border-[#FBA32C] bg-[#1E1510] text-[#FBA32C] font-passeroOne md:text-[24px] text-[16px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] md:px-[24px] px-[18px] md:py-[12px] py-[8px]'>Learn More</button>
+                <button className='border border-[#FBA32C] bg-[#1E1510] hover:bg-[#FBA32C] text-[#FBA32C] hover:text-[#1E1510] font-passeroOne md:text-[24px] text-[16px] lg:leading-[38.4px] lg:tracking-[0.48px] rounded-[8px] md:px-[24px] px-[18px] md:py-[12px] py-[8px] duration-300'>Learn More</button>
               </div>
             </div>
 
