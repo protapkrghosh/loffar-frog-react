@@ -6,7 +6,7 @@ const AboutUs = () => {
   return (
     <div id='about'>
       <div className='h-[40px] w-full mt-[-130px] 2xl:mt-[-5px] bg-[#FBA32C]' />
-      <div className='xl:mt-[185px] lg:mt-[145px] md:mt-[90px] mt-[60px]'>
+      <div className='xl:mt-[180px] lg:mt-[145px] md:mt-[90px] mt-[60px]'>
         <Container>
 
           <div className='lg:flex items-center lg:space-x-4'>

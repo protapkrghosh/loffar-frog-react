@@ -8,7 +8,7 @@ import { PiGithubLogoFill } from "react-icons/pi";
 
 const FooterLinkSection = () => {
   return (
-    <div className='lg:mt-[200px] bg-[#1E130C]'>
+    <div className='lg:mt-[160px] bg-[#1E130C]'>
       <Container>
 
         {/* First part footer  */}

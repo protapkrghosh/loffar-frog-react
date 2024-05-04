@@ -4,7 +4,7 @@ import faqImg from '@/assets/images/Group 1171275338.png';
 
 const Faq = () => {
   return (
-    <div className='my-[60px] md:my-[100px] lg:mt-[400px]' id='partners'>
+    <div className='my-[60px] md:my-[100px] xl:mt-[430px] lg:mt-[350px] md:mt-[160px] mt-[90px]' id='partners'>
       <Container>
 
         <div className='lg:flex 2xl:space-x-[150px] xl:space-x-[90px] gap-x-10 xl:gap-x-0'>
