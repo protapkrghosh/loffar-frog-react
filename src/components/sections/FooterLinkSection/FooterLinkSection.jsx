@@ -20,17 +20,22 @@ const FooterLinkSection = () => {
 
             <div className='flex lg:gap-[32px] items-center'>
               <div className='flex gap-[14px] mr-6 lg:mr-0'>
-                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTwitter className='w-[27px] h-[27px]' /></a>
+                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]' data-aos="fade-up"
+                  data-aos-duration="600"><FaTwitter className='w-[27px] h-[27px]' /></a>
 
-                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTelegramPlane className='w-[27px] h-[27px]' /></a>
+                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]' data-aos="fade-up"
+                  data-aos-duration="1200"><FaTelegramPlane className='w-[27px] h-[27px]' /></a>
 
-                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><PiGithubLogoFill className='w-[27px] h-[27px]' /></a>
+                <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]' data-aos="fade-up"
+                  data-aos-duration="1800"><PiGithubLogoFill className='w-[27px] h-[27px]' /></a>
               </div>
 
               <div className='space-x-6'>
-                <button className='bg-[#FBA32C] hover:bg-transparent border border-[#FBA32C] text-[#1E1510] hover:text-[#FBA32C] font-passeroOne lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[23px] py-[11.5px] duration-300'>BUY ON OKX</button>
+                <button className='bg-[#FBA32C] hover:bg-transparent border border-[#FBA32C] text-[#1E1510] hover:text-[#FBA32C] font-passeroOne lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[23px] py-[11.5px] duration-300' data-aos="fade-up"
+                  data-aos-duration="2200">BUY ON OKX</button>
 
-                <button className='border border-[#FBA32C] hover:bg-[#FBA32C] text-[#FBA32C] hover:text-[#1E1510] font-passeroOne lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px] duration-300'>TOTALL SUPPLY</button>
+                <button className='border border-[#FBA32C] hover:bg-[#FBA32C] text-[#FBA32C] hover:text-[#1E1510] font-passeroOne lg:text-[20px] lg:leading-[32px] lg:tracking-[0.4px] rounded-[8px] px-[24px] py-[12px] duration-300' data-aos="fade-up"
+                  data-aos-duration="2600">TOTALL SUPPLY</button>
               </div>
 
             </div>

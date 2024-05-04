@@ -9,9 +9,11 @@ const Roadmap = () => {
       <Container>
         {/* ---------------- roadmap text ---------------- */}
         <div>
-          <p className='text-[#FBA32C] lg:text-start text-center font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px] md:mb-[8px] mb-[6px]'>ROADMAP</p>
+          <p className='text-[#FBA32C] lg:text-start text-center font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px] md:mb-[8px] mb-[6px]' data-aos="fade-up"
+            data-aos-duration="1000">ROADMAP</p>
 
-          <p className='text-[#B2ACA8] lg:text-start text-center font-passeroOne lg:text-[20px] md:text-[16px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%] lg:px-0 md:px-5 px-3'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
+          <p className='text-[#B2ACA8] lg:text-start text-center font-passeroOne lg:text-[20px] md:text-[16px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%] lg:px-0 md:px-5 px-3' data-aos="fade-up"
+            data-aos-duration="2000">The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
         </div>
 
         {/* ----------- roadmap section ------------ */}
