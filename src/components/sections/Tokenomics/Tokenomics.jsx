@@ -25,7 +25,7 @@ const Tokenomics = () => {
   };
 
   return (
-    <div className='xl:mt-[200px] lg:mt-[150px] md:mt-[80px] mt-[60px]'>
+    <div className='xl:mt-[200px] lg:mt-[150px] md:mt-[80px] mt-[60px]' id='tokenomics'>
       <Container>
         <p className='text-[#FBA32C] font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] lg:leading-[138px] tracking-[2.3px] text-center lg:mb-[100px] md:mb-[50px] mb-[20px]'>TOKENOMICS</p>
 

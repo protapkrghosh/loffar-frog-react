@@ -79,7 +79,7 @@ const Banner = () => {
   };
 
   return (
-    <div>
+    <div id="home">
       <div>
         <img src={bannerBg} alt="Image" className="h-[1000px] lg:h-[1150px]  xl:h-[1150px] 2xl:h-auto w-full -mt-[125px] -mb-[800px] lg:-mb-[950px] xl:-mb-[928px] 2xl:-mb-[1050px] hidden lg:block" />
 
@@ -88,7 +88,7 @@ const Banner = () => {
             <div className="lg:flex justify-between items-center gap-x-[35px] xl:gap-x-[91px]">
               <div className="lg:w-[60%] xl:w-[50%] 2xl:w-[40%]">
                 <div className="relative">
-                  <img src={frogCard} alt="Image" className="h-[700px] md:h-[860px] lg:h-[840px] xl:h-[820px] 2xl:h-[820px] md:w-[550px] lg:w-auto xl:scale-105 2xl:scale-110 mx-auto lg:mx-0"/>
+                  <img src={frogCard} alt="Image" className="h-[700px] md:h-[860px] lg:h-[840px] xl:h-[820px] 2xl:h-[820px] md:w-[550px] lg:w-auto xl:scale-105 2xl:scale-110 mx-auto lg:mx-0" />
 
                   <div className="absolute bottom-[60px] md:bottom-[55px] lg:bottom-[48px] xl:bottom-[40px] 2xl:bottom-[25px] left-[65px] md:left-[170px] lg:left-[100px] xl:left-[90px] 2xl:left-[95px]">
                     <p className="text-[#1E1510] text-[12px] md:text-[15px] font-pantonRust font-extrabold leading-[19px] proportional-nums">Presale Ends in:</p>

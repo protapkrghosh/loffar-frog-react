@@ -4,7 +4,7 @@ import aboutImg from '@/assets/images/Group 1171275328.png';
 
 const AboutUs = () => {
   return (
-    <div>
+    <div id='about'>
       <div className='h-[40px] w-full mt-[-130px] 2xl:mt-[-5px] bg-[#FBA32C]' />
       <div className='xl:mt-[185px] lg:mt-[145px] md:mt-[90px] mt-[60px]'>
         <Container>

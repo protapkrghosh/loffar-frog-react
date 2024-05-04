@@ -99,15 +99,15 @@ const NavBar = () => {
               </li>
 
               <li>
-                <Link to="tokenomics" smooth={true} offset={0} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "tokenomics" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("tokenomics")}>Tokenomics</Link>
+                <Link to="tokenomics" smooth={true} offset={-140} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "tokenomics" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("tokenomics")}>Tokenomics</Link>
               </li>
 
               <li>
-                <Link to="roadmap" smooth={true} offset={10} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "roadmap" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("roadmap")}>Roadmap</Link>
+                <Link to="roadmap" smooth={true} offset={-160} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "roadmap" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("roadmap")}>Roadmap</Link>
               </li>
 
               <li>
-                <Link to="partners" smooth={true} offset={10} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "partners" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("partners")}>Faq</Link>
+                <Link to="partners" smooth={true} offset={-220} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "partners" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("partners")}>Faq</Link>
               </li>
 
               <div className="block md:hidden">
@@ -144,7 +144,7 @@ const NavBar = () => {
 
                 <div className="h-[1px] w-[91px] bg-[#1E1510] opacity-70 rotate-90 -mx-4" />
 
-                <Link to="home" smooth={true} offset={-30} duration={600}>
+                <Link to="contract" smooth={true} offset={-30} duration={600}>
                   <Button className="bg-[#fcb95f] hover:bg-[#eeae59] text-[#1E1510] rounded-[4px] border border-[#1E1510] text-[16px] font-passeroOne font-normal mr-5">contract</Button>
                 </Link>
               </div>

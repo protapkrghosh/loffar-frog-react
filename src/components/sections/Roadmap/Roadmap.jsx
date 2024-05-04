@@ -5,7 +5,7 @@ import roadmapCardLogo from '@/assets/images/roadmap-logo.png';
 
 const Roadmap = () => {
   return (
-    <div className='lg:mt-[214px] md:mt-[90px] mt-[60px]'>
+    <div className='lg:mt-[214px] md:mt-[90px] mt-[60px]' id='roadmap'>
       <Container>
         {/* ---------------- roadmap text ---------------- */}
         <div>

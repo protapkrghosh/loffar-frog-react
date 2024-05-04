@@ -3,7 +3,7 @@ import Container from '@/components/sections/Container/Container';
 
 const Footer = () => {
   return (
-    <div className='bg-[#FBA32C]'>
+    <div className='bg-[#FBA32C]' id='contract'>
       <Container>
         {/* second part footer  */}
         <div className='flex flex-col md:flex-row justify-center md:justify-between items-center py-[20px] md:py-[33px]'>
