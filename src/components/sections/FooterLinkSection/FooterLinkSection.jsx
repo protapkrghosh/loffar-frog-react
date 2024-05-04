@@ -3,6 +3,7 @@ import footerLogo from '@/assets/images/loffar logo 2.png';
 import { FaTwitter } from "react-icons/fa";
 import { FaTelegramPlane } from "react-icons/fa";
 import { PiGithubLogoFill } from "react-icons/pi";
+import { Link } from "react-scroll";
 
 
 
@@ -14,9 +15,9 @@ const FooterLinkSection = () => {
         {/* First part footer  */}
         <div className='hidden md:block'>
           <div className='flex justify-between xl:pt-[88px] xl:pb-[70px] py-[55px]'>
-            <div>
-              <img className='w-auto' src={footerLogo} alt="image" />
-            </div>
+            <Link to="home" smooth={true} offset={-30} duration={600}>
+              <img className='w-auto cursor-pointer' src={footerLogo} alt="image" />
+            </Link>
 
             <div className='flex lg:gap-[32px] items-center'>
               <div className='flex gap-[14px] mr-6 lg:mr-0'>
@@ -47,7 +48,9 @@ const FooterLinkSection = () => {
         <div className='block md:hidden'>
           <div className='xl:pt-[88px] xl:pb-[70px] py-[55px]'>
             <div className='flex justify-between'>
-              <img className='w-auto' src={footerLogo} alt="image" />
+              <Link to="home" smooth={true} offset={-30} duration={600}>
+                <img className='w-auto cursor-pointer' src={footerLogo} alt="image" />
+              </Link>
 
               <div className='flex gap-[14px]'>
                 <a href="" target='_blank' className='text-[#F7B501] px-3 py-3 border border-[#F7B501] hover:bg-[#301F0C] rounded-[5px]'><FaTwitter className='w-[27px] h-[27px]' /></a>
