@@ -11,7 +11,7 @@ const FooterLinkSection = () => {
     <div className='lg:mt-[160px] bg-[#1E130C]'>
       <Container>
 
-        {/* First part footer  */}
+        {/* -- First part footer -- */}
         <div className='hidden md:block'>
           <div className='flex justify-between xl:pt-[88px] xl:pb-[70px] py-[55px]'>
             <div>
