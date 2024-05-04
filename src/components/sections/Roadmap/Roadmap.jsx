@@ -5,13 +5,13 @@ import roadmapCardLogo from '@/assets/images/roadmap-logo.png';
 
 const Roadmap = () => {
   return (
-    <div className='lg:mt-[214px]'>
+    <div className='lg:mt-[214px] md:mt-[90px]'>
       <Container>
         {/* ---------------- roadmap text ---------------- */}
         <div>
-          <p className='text-[#FBA32C] font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px]'>ROADMAP</p>
+          <p className='text-[#FBA32C] lg:text-start text-center font-pantonRust font-medium 2xl:text-[115px] xl:text-[85px] lg:text-[65px] md:text-[60px] lg:leading-[138px] lg:tracking-[2.3px] xl:mb-[8px] md:mb-[8px]'>ROADMAP</p>
 
-          <p className='text-[#B2ACA8] font-passeroOne lg:text-[20px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%]'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
+          <p className='text-[#B2ACA8] lg:text-start text-center font-passeroOne lg:text-[20px] md:text-[16px] lg:leading-[34px] lg:tracking-[0.4px] lg:w-[42%]'>The $KEKE project's roadmap includes enhancing liquidity, expanding exchange listings, integrating NFTs, and fostering community engagement through gamification and partnerships.</p>
         </div>
 
         {/* ----------- roadmap section ------------ */}
@@ -19,12 +19,12 @@ const Roadmap = () => {
         <div>
 
           {/* images  */}
-          <div className='xl:mt-[-245px] lg:mt-[-140px]'>
+          <div className='hidden lg:block xl:mt-[-245px] lg:mt-[-140px]'>
             <img className='2xl:w-[93%] xl:w-[92%] lg:w-[92%] mx-auto' src={roadmapImg} alt="image" />
           </div>
 
           {/* text  */}
-          <div>
+          <div className='lg:mt-0 md:mt-[14px]'>
 
             {/* ------------- card 1 -------------- */}
             <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
