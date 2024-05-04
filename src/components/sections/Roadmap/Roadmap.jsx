@@ -20,16 +20,16 @@ const Roadmap = () => {
 
           {/* images  */}
           <div className='hidden lg:block xl:mt-[-245px] lg:mt-[-140px]'>
-            <img className='2xl:w-[93%] xl:w-[92%] lg:w-[92%] mx-auto' src={roadmapImg} alt="image" />
+            <img className='2xl:w-[93%] xl:w-[90%] lg:w-[82%] mx-auto' src={roadmapImg} alt="image" />
           </div>
 
 
           {/* -------------- Large Device ------------ */}
           {/* text  */}
-          <div className='hidden lg:block lg:mt-0 md:mt-[14px]'>
+          <div className='hidden lg:block lg:mt-0 md:mt-[14px] relative'>
 
             {/* ------------- card 1 -------------- */}
-            <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
+            <div className='2xl:ml-[155px] xl:ml-[140px] lg:ml-[135px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
               <p className='text-[#FBA32C] font-pantonRust font-medium text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 1</p>
 
               <div className='flex items-center md:gap-4 lg:mb-[22px]'>
@@ -71,7 +71,7 @@ const Roadmap = () => {
             </div>
 
             {/* ------------- card 3 -------------- */}
-            <div className='2xl:ml-[1245px] xl:ml-[995px] lg:ml-[760px] 2xl:mt-[-457px] xl:mt-[-397px] lg:mt-[-345px]'>
+            <div className='absolute 2xl:top-[-465px] xl:top-[-380px] lg:top-[-265px] 2xl:right-[-10px] xl:right-[-25px] lg:right-[-27px]'>
               <p className='text-[#FBA32C] font-pantonRust font-medium text-[30px] lg:leading-[36px] lg:tracking-[0.3px] lg:mb-[16px]'>PHASE 3</p>
 
               <div className='flex items-center md:gap-4 lg:mb-[22px]'>
@@ -106,7 +106,7 @@ const Roadmap = () => {
           {/* text  */}
           <div className='block lg:hidden lg:mt-0 md:mt-[45px] mt-[25px]'>
 
-            <div className='grid md:grid-cols-2 grid-cols-1 md:ml-32'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:ml-32 ml-10'>
 
               {/* ------------- card 1 -------------- */}
               <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
