@@ -104,9 +104,9 @@ const Roadmap = () => {
 
           {/* -------------- Small Device ------------ */}
           {/* text  */}
-          <div className='block lg:hidden lg:mt-0 md:mt-[14px] mt-[12px]'>
+          <div className='block lg:hidden lg:mt-0 md:mt-[45px] mt-[25px]'>
 
-            <div className='grid md:grid-cols-2 grid-cols-1 ml-32'>
+            <div className='grid md:grid-cols-2 grid-cols-1 md:ml-32'>
 
               {/* ------------- card 1 -------------- */}
               <div className='2xl:ml-[155px] xl:ml-[130px] lg:ml-[100px] 2xl:mt-[24px] xl:mt-[25px] lg:mt-[25px]'>
