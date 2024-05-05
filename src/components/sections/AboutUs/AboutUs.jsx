@@ -1,6 +1,6 @@
 import React from 'react';
 import Container from '../Container/Container';
-import aboutImg from '@/assets/images/Group 1171275328.png';
+import aboutImg from '@/assets/images/Group 1171275373.png';
 
 const AboutUs = () => {
   return (
@@ -11,8 +11,8 @@ const AboutUs = () => {
 
           <div className='lg:flex items-center lg:space-x-4'>
             <div className='lg:w-[60%]'>
-              <p className='text-[#FBA32C] lg:text-start text-center 2xl:text-[105px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] font-pantonRust font-medium lg:leading-[126px] lg:tracking-[2.1px] lg:mb-[24px] md:mb-[18px] mb-[14px]' data-aos="fade-up"
-                data-aos-duration="750">about Us frog</p>
+              {/* <p className='text-[#FBA32C] lg:text-start text-center 2xl:text-[105px] xl:text-[85px] lg:text-[65px] md:text-[60px] text-[30px] font-pantonRust font-medium lg:leading-[126px] lg:tracking-[2.1px] lg:mb-[24px] md:mb-[18px] mb-[14px]' data-aos="fade-up"
+                data-aos-duration="750">about Us frog</p> */}
 
               <p className='text-[#B2ACA8] lg:text-start text-center xl:text-[24px] lg:text-[20px] md:text-[16px] text-[12px] font-passeroOne xl:leading-[40.8px] lg:leading-[30.8px] md:leading-[22.8px] tracking-[0.48px] lg:mb-[16px] md:mb-[14px] mb-[12px]' data-aos="fade-up"
                 data-aos-duration="1500">Welcome to Loffar Frog, where imagination meets innovation. As the whimsical minds behind the scenes, we're dedicated to crafting delightful experiences that enchant and inspire. </p>
