@@ -95,7 +95,11 @@ const NavBar = () => {
             <ul className={`md:flex md:items-center md:py-3 pt-5 pb-7 space-x-1 space-y-4 md:space-y-0 absolute md:static md:z-auto z-[-1px] left-0 w-full md:w-auto md:pl-0 pl-9 transition-all duration-500 ease-linear opacity-0 md:opacity-100 rounded-[5px] ${open ? 'top-[100px] opacity-100 bg-[#ce964d] z-10' : 'top-[-490px]'}`}>
 
               <li>
-                <Link to="about" smooth={true} offset={-30} duration={600} className={`text-[18px] font-passeroOne ml-[2px] lg:ml-5 md:ml-3 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "home" ? ' text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("home")}>About</Link>
+                <Link to="home" smooth={true} offset={-30} duration={600} className={`text-[18px] font-passeroOne ml-[2px] lg:ml-5 md:ml-3 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "home" ? ' text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("home")}>Home</Link>
+              </li>
+
+              <li>
+                <Link to="about" smooth={true} offset={-140} duration={600} className={`text-[18px] font-passeroOne duration-300 cursor-pointer rounded-[4px] lg:px-4 md:px-2 px-4 py-[9px] 2xl:py-[13px] border border-transparent ${activeLink === "about" ? 'text-[#1E1510] border-[#1d140f] bg-[#fcb95f]' : 'hover:bg-[#fcb95f] hover:border-[#1E1510] duration-200'}`} onClick={() => setActiveLink("about")}>About</Link>
               </li>
 
               <li>
