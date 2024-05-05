@@ -9,7 +9,7 @@ const AboutUs = () => {
       <div className='xl:mt-[180px] lg:mt-[145px] md:mt-[90px] mt-[60px]'>
         <Container>
 
-          <div className='lg:flex items-center lg:space-x-4'>
+          <div className='flex items-center flex-col-reverse lg:flex-row lg:space-x-4'>
             <div className='lg:w-[60%]'>
 
               <p className='text-[#B2ACA8] lg:text-start text-center xl:text-[24px] lg:text-[20px] md:text-[16px] text-[12px] font-passeroOne xl:leading-[40.8px] lg:leading-[30.8px] md:leading-[22.8px] tracking-[0.48px] lg:mb-[16px] md:mb-[14px] mb-[12px]' data-aos="fade-up"
